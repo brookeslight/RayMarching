@@ -14,7 +14,7 @@ public class Circle extends Bound {
 
 	@Override
 	public double distanceTo(float x1, float y1) {
-		return (Math.hypot(this.x - x1, this.y - y1) - this.r);
+		return Math.abs(Math.hypot(this.x - x1, this.y - y1) - this.r);
 	}
 
 	@Override
